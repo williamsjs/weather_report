@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './setup.rb'
+require './user.rb'
 
 
 class Test < Minitest::Test
@@ -17,6 +18,14 @@ class Test < Minitest::Test
     assert_equal "TN", weather["current_observation"]["display_location"]["state"]
   end
 
-  
+  def test_assert_user
+    assert User
+  end
+
+  def test_store_user_input_in_user
+
+  end
+
+
 
 end
