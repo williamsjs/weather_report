@@ -49,4 +49,10 @@ class Test < Minitest::Test
     assert mount_airy.humidity
   end
 
+  def test_condition_weather
+    mount_airy = Location.new(27030)
+    mount_airy_conditions = Conditions.new(mount_airy)
+    assert mount_airy_conditions.sky
+  end
+
 end

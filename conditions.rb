@@ -20,4 +20,8 @@ class Conditions
     weather["current_observation"]["relative_humidity"]
   end
 
+  def sky
+    weather["current_observation"]["weather"]
+  end
+
 end
