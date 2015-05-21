@@ -34,13 +34,19 @@ class Test < Minitest::Test
   def test_class_condition_f_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert_in_delta 100, 100, mount_airy.fahrenheit
+    assert mount_airy.fahrenheit
   end
 
   def test_condition_c_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert_in_delta 100, 100, mount_airy.celsius
+    assert mount_airy.celsius
+  end
+
+  def test_condition_humidity
+    location = Location.new(27030)
+    mount_airy = Conditions.new(location)
+    assert mount_airy.humidity
   end
 
 end
