@@ -1,7 +1,9 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './setup.rb'
-require './user.rb'
+
+require './location.rb'
+require './conditions.rb'
+require 'byebug'
 
 
 class Test < Minitest::Test
@@ -18,14 +20,27 @@ class Test < Minitest::Test
     assert_equal "TN", weather["current_observation"]["display_location"]["state"]
   end
 
-  def test_assert_user
-    assert User
+  def test_location
+    assert Location
   end
 
   def test_store_user_input_in_user
+    user_input = "37212".to_i
 
+    location = Location.new(user_input)
+    assert_equal 37212, location.zip
   end
 
+  def test_class_condition_f_temp
+    location = Location.new(27030)
+    mount_airy = Conditions.new(location)
+    assert_in_delta 100, 100, mount_airy.fahrenheit
+  end
 
+  def test_condition_c_temp
+    location = Location.new(27030)
+    mount_airy = Conditions.new(location)
+    assert_in_delta 100, 100, mount_airy.celsius
+  end
 
 end
