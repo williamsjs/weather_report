@@ -1,0 +1,960 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "forecast10day": 1
+  }
+	}
+		,
+	"forecast":{
+		"txt_forecast": {
+		"date":"2:19 PM EDT",
+		"forecastday": [
+		{
+		"period":0,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"Friday",
+		"fcttext":"Plentiful sunshine. High around 75F. Winds light and variable.",
+		"fcttext_metric":"Plentiful sunshine. High 24C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":1,
+		"icon":"nt_clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"title":"Friday Night",
+		"fcttext":"Clear skies. Low 48F. Winds light and variable.",
+		"fcttext_metric":"A clear sky. Low 9C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":2,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"Saturday",
+		"fcttext":"Sunny skies. High 79F. Winds light and variable.",
+		"fcttext_metric":"Sunny. High 26C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":3,
+		"icon":"nt_clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"title":"Saturday Night",
+		"fcttext":"A mostly clear sky. Low 54F. Winds light and variable.",
+		"fcttext_metric":"A mostly clear sky. Low 12C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":4,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Sunday",
+		"fcttext":"Intervals of clouds and sunshine. High 83F. Winds S at 5 to 10 mph.",
+		"fcttext_metric":"Partly cloudy skies. High 29C. Winds S at 10 to 15 km/h.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":5,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Sunday Night",
+		"fcttext":"A few clouds. Low 57F. Winds light and variable.",
+		"fcttext_metric":"A few clouds from time to time. Low 14C. Winds light and variable.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":6,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"Monday",
+		"fcttext":"Sunny skies. High 87F. Winds S at 5 to 10 mph.",
+		"fcttext_metric":"Mostly sunny. High 31C. Winds S at 10 to 15 km/h.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":7,
+		"icon":"nt_clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"title":"Monday Night",
+		"fcttext":"Mostly clear. Low 62F. Winds light and variable.",
+		"fcttext_metric":"Mostly clear. Low 17C. Winds light and variable.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":8,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Tuesday",
+		"fcttext":"Partly cloudy in the morning followed by scattered thunderstorms in the afternoon. High 87F. Winds SSW at 5 to 10 mph. Chance of rain 40%.",
+		"fcttext_metric":"Partly cloudy in the morning followed by scattered thunderstorms in the afternoon. High 31C. Winds SSW at 10 to 15 km/h. Chance of rain 40%.",
+		"pop":"40"
+		}
+		,
+		{
+		"period":9,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Tuesday Night",
+		"fcttext":"Partly cloudy. Low 63F. Winds light and variable.",
+		"fcttext_metric":"A few clouds from time to time. Low 17C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":10,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Wednesday",
+		"fcttext":"Partly cloudy skies. High 87F. Winds SSW at 5 to 10 mph.",
+		"fcttext_metric":"Sunshine and clouds mixed. High 31C. Winds SSW at 10 to 15 km/h.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":11,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Wednesday Night",
+		"fcttext":"A few clouds from time to time. Low 63F. Winds light and variable.",
+		"fcttext_metric":"Partly cloudy skies. Low 17C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":12,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Thursday",
+		"fcttext":"Sun and clouds mixed with a slight chance of thunderstorms during the afternoon. High 89F. Winds SW at 5 to 10 mph. Chance of rain 30%.",
+		"fcttext_metric":"Sun and clouds mixed with a slight chance of thunderstorms during the afternoon. High 32C. Winds SW at 10 to 15 km/h. Chance of rain 30%.",
+		"pop":"30"
+		}
+		,
+		{
+		"period":13,
+		"icon":"nt_chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif",
+		"title":"Thursday Night",
+		"fcttext":"Scattered thunderstorms early. Skies will become mainly clear overnight. Low 64F. Winds light and variable. Chance of rain 40%.",
+		"fcttext_metric":"Scattered thunderstorms during the evening, then becoming mainly clear overnight. Low 18C. Winds light and variable. Chance of rain 40%.",
+		"pop":"40"
+		}
+		,
+		{
+		"period":14,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"Friday",
+		"fcttext":"Except for a few afternoon clouds, mainly sunny. High 91F. Winds light and variable.",
+		"fcttext_metric":"Sunny, along with a few afternoon clouds. High 33C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":15,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Friday Night",
+		"fcttext":"A few clouds from time to time. Low 64F. Winds light and variable.",
+		"fcttext_metric":"A few clouds from time to time. Low 18C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":16,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Saturday",
+		"fcttext":"Sunshine and clouds mixed. High around 90F. Winds light and variable.",
+		"fcttext_metric":"Sunshine and clouds mixed. High 33C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":17,
+		"icon":"nt_chancerain",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_chancerain.gif",
+		"title":"Saturday Night",
+		"fcttext":"Showers in the evening, then clearing overnight. Low around 65F. Winds light and variable. Chance of rain 40%.",
+		"fcttext_metric":"Rain showers early with clearing later at night. Low 19C. Winds light and variable. Chance of rain 40%.",
+		"pop":"40"
+		}
+		,
+		{
+		"period":18,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"Sunday",
+		"fcttext":"Partly cloudy with afternoon showers or thunderstorms. High 89F. Winds S at 5 to 10 mph. Chance of rain 60%.",
+		"fcttext_metric":"Partly cloudy in the morning followed by scattered thunderstorms in the afternoon. High 32C. Winds S at 10 to 15 km/h. Chance of rain 60%.",
+		"pop":"60"
+		}
+		,
+		{
+		"period":19,
+		"icon":"nt_chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif",
+		"title":"Sunday Night",
+		"fcttext":"Scattered showers and thunderstorms. Low near 65F. Winds light and variable. Chance of rain 60%.",
+		"fcttext_metric":"Variably cloudy with scattered thunderstorms. Low 18C. Winds light and variable. Chance of rain 60%.",
+		"pop":"60"
+		}
+		]
+		},
+		"simpleforecast": {
+		"forecastday": [
+		{"date":{
+	"epoch":"1432335600",
+	"pretty":"7:00 PM EDT on May 22, 2015",
+	"day":22,
+	"month":5,
+	"year":2015,
+	"yday":141,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Fri",
+	"weekday":"Friday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":1,
+		"high": {
+		"fahrenheit":"75",
+		"celsius":"24"
+		},
+		"low": {
+		"fahrenheit":"48",
+		"celsius":"9"
+		},
+		"conditions":"Clear",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":0,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "NNW",
+		"degrees": 328
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "NNW",
+		"degrees": 328
+		},
+		"avehumidity": 26,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432422000",
+	"pretty":"7:00 PM EDT on May 23, 2015",
+	"day":23,
+	"month":5,
+	"year":2015,
+	"yday":142,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Sat",
+	"weekday":"Saturday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":2,
+		"high": {
+		"fahrenheit":"79",
+		"celsius":"26"
+		},
+		"low": {
+		"fahrenheit":"54",
+		"celsius":"12"
+		},
+		"conditions":"Clear",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":0,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "ESE",
+		"degrees": 117
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "ESE",
+		"degrees": 117
+		},
+		"avehumidity": 48,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432508400",
+	"pretty":"7:00 PM EDT on May 24, 2015",
+	"day":24,
+	"month":5,
+	"year":2015,
+	"yday":143,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Sun",
+	"weekday":"Sunday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":3,
+		"high": {
+		"fahrenheit":"83",
+		"celsius":"28"
+		},
+		"low": {
+		"fahrenheit":"57",
+		"celsius":"14"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":0,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "S",
+		"degrees": 187
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "S",
+		"degrees": 187
+		},
+		"avehumidity": 50,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432594800",
+	"pretty":"7:00 PM EDT on May 25, 2015",
+	"day":25,
+	"month":5,
+	"year":2015,
+	"yday":144,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Mon",
+	"weekday":"Monday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":4,
+		"high": {
+		"fahrenheit":"87",
+		"celsius":"31"
+		},
+		"low": {
+		"fahrenheit":"62",
+		"celsius":"17"
+		},
+		"conditions":"Clear",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "S",
+		"degrees": 188
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "S",
+		"degrees": 188
+		},
+		"avehumidity": 51,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432681200",
+	"pretty":"7:00 PM EDT on May 26, 2015",
+	"day":26,
+	"month":5,
+	"year":2015,
+	"yday":145,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Tue",
+	"weekday":"Tuesday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":5,
+		"high": {
+		"fahrenheit":"87",
+		"celsius":"31"
+		},
+		"low": {
+		"fahrenheit":"63",
+		"celsius":"17"
+		},
+		"conditions":"Chance of a Thunderstorm",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"",
+		"pop":40,
+		"qpf_allday": {
+		"in": 0.03,
+		"mm": 1
+		},
+		"qpf_day": {
+		"in": 0.03,
+		"mm": 1
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSW",
+		"degrees": 194
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "SSW",
+		"degrees": 194
+		},
+		"avehumidity": 64,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432767600",
+	"pretty":"7:00 PM EDT on May 27, 2015",
+	"day":27,
+	"month":5,
+	"year":2015,
+	"yday":146,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Wed",
+	"weekday":"Wednesday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":6,
+		"high": {
+		"fahrenheit":"87",
+		"celsius":"31"
+		},
+		"low": {
+		"fahrenheit":"63",
+		"celsius":"17"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSW",
+		"degrees": 198
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "SSW",
+		"degrees": 198
+		},
+		"avehumidity": 64,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432854000",
+	"pretty":"7:00 PM EDT on May 28, 2015",
+	"day":28,
+	"month":5,
+	"year":2015,
+	"yday":147,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Thu",
+	"weekday":"Thursday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":7,
+		"high": {
+		"fahrenheit":"89",
+		"celsius":"32"
+		},
+		"low": {
+		"fahrenheit":"64",
+		"celsius":"18"
+		},
+		"conditions":"Chance of a Thunderstorm",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"",
+		"pop":30,
+		"qpf_allday": {
+		"in": 0.03,
+		"mm": 1
+		},
+		"qpf_day": {
+		"in": 0.02,
+		"mm": 1
+		},
+		"qpf_night": {
+		"in": 0.01,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SW",
+		"degrees": 219
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "SW",
+		"degrees": 219
+		},
+		"avehumidity": 58,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1432940400",
+	"pretty":"7:00 PM EDT on May 29, 2015",
+	"day":29,
+	"month":5,
+	"year":2015,
+	"yday":148,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Fri",
+	"weekday":"Friday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":8,
+		"high": {
+		"fahrenheit":"91",
+		"celsius":"33"
+		},
+		"low": {
+		"fahrenheit":"64",
+		"celsius":"18"
+		},
+		"conditions":"Clear",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "SW",
+		"degrees": 214
+		},
+		"avewind": {
+		"mph": 4,
+		"kph": 6,
+		"dir": "SW",
+		"degrees": 214
+		},
+		"avehumidity": 59,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1433026800",
+	"pretty":"7:00 PM EDT on May 30, 2015",
+	"day":30,
+	"month":5,
+	"year":2015,
+	"yday":149,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Sat",
+	"weekday":"Saturday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":9,
+		"high": {
+		"fahrenheit":"90",
+		"celsius":"32"
+		},
+		"low": {
+		"fahrenheit":"65",
+		"celsius":"18"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.03,
+		"mm": 1
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.01,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SW",
+		"degrees": 223
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "SW",
+		"degrees": 223
+		},
+		"avehumidity": 58,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1433113200",
+	"pretty":"7:00 PM EDT on May 31, 2015",
+	"day":31,
+	"month":5,
+	"year":2015,
+	"yday":150,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"May",
+	"monthname_short":"May",
+	"weekday_short":"Sun",
+	"weekday":"Sunday",
+	"ampm":"PM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":10,
+		"high": {
+		"fahrenheit":"89",
+		"celsius":"32"
+		},
+		"low": {
+		"fahrenheit":"65",
+		"celsius":"18"
+		},
+		"conditions":"Chance of a Thunderstorm",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"",
+		"pop":60,
+		"qpf_allday": {
+		"in": 0.18,
+		"mm": 5
+		},
+		"qpf_day": {
+		"in": 0.07,
+		"mm": 2
+		},
+		"qpf_night": {
+		"in": 0.11,
+		"mm": 3
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "S",
+		"degrees": 182
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "S",
+		"degrees": 182
+		},
+		"avehumidity": 63,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		]
+		}
+	}
+}

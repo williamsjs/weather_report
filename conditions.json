@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Mount Airy, NC",
+		"city":"Mount Airy",
+		"state":"NC",
+		"state_name":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"27030",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"36.49393845",
+		"longitude":"-80.62852478",
+		"elevation":"328.00000000"
+		},
+		"observation_location": {
+		"full":"Mt. Airy, NC, Mt Airy, North Carolina",
+		"city":"Mt. Airy, NC, Mt Airy",
+		"state":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"36.519432",
+		"longitude":"-80.644630",
+		"elevation":"1197 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KNCMOUNT1",
+		"observation_time":"Last Updated on May 22, 3:44 PM EDT",
+		"observation_time_rfc822":"Fri, 22 May 2015 15:44:09 -0400",
+		"observation_epoch":"1432323849",
+		"local_time_rfc822":"Fri, 22 May 2015 15:44:46 -0400",
+		"local_epoch":"1432323886",
+		"local_tz_short":"EDT",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0400",
+		"weather":"Clear",
+		"temperature_string":"75.2 F (24.0 C)",
+		"temp_f":75.2,
+		"temp_c":24.0,
+		"relative_humidity":"33%",
+		"wind_string":"From the NNE at 3.0 MPH Gusting to 6.0 MPH",
+		"wind_dir":"NNE",
+		"wind_degrees":28,
+		"wind_mph":3.0,
+		"wind_gust_mph":"6.0",
+		"wind_kph":4.8,
+		"wind_gust_kph":"9.7",
+		"pressure_mb":"1023",
+		"pressure_in":"30.21",
+		"pressure_trend":"+",
+		"dewpoint_string":"44 F (7 C)",
+		"dewpoint_f":44,
+		"dewpoint_c":7,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"75.2 F (24.0 C)",
+		"feelslike_f":"75.2",
+		"feelslike_c":"24.0",
+		"visibility_mi":"N/A",
+		"visibility_km":"N/A",
+		"solarradiation":"863",
+		"UV":"5.8","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"forecast_url":"http://www.wunderground.com/US/NC/Mount_Airy.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KNCMOUNT1",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=36.519432,-80.644630",
+		"nowcast":""
+	}
+}

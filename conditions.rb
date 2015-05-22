@@ -5,7 +5,7 @@ class Conditions
 
   def initialize(location)
     @zip = location.zip
-    @weather = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{zip}.json")["current_observation"]
+    @weather = get_weather
   end
 
   def fahrenheit
@@ -22,6 +22,10 @@ class Conditions
 
   def sky
     weather["weather"]
+  end
+
+  private def get_weather
+    HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{zip}.json")["current_observation"]
   end
 
 end
