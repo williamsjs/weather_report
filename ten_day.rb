@@ -1,21 +1,21 @@
 require 'httparty'
 
 class TenDayForecast
-  attr_reader :zip, :weather, :forecast
+  attr_reader :zip, :weather, :ten_day
 
   def initialize(location)
     @zip = location.zip
     @weather = get_weather
-    @forecast = []
+    @ten_day = "Your ten day forecast is: \n\n#{get_forecast}"
   end
 
-  def get_forecast
-    initial = "Your ten day forecast is: "
-    @forecast = get_weather.map do |item|
-      "\n#{item["date"]["month"]}/#{item["date"]["day"]}/#{item["date"]["year"]}"
-      "\nTemperature: \n\thigh of #{item["high"]["fahrenheit"]}F, #{item["high"]["celsius"]}C"
-      "\n\tLow of #{item["low"]["fahrenheit"]}F, #{item["low"]["celsius"]}"
+  private def get_forecast
+    all = get_weather.map do |item|
+      """#{item["date"]["month"]}/#{item["date"]["day"]}/#{item["date"]["year"]}
+      \thigh of #{item["high"]["fahrenheit"]}F, #{item["high"]["celsius"]}C
+      \tLow of #{item["low"]["fahrenheit"]}F, #{item["low"]["celsius"]}C\n"""
     end
+    all.join
   end
 
   private def get_weather

@@ -21,7 +21,7 @@ end
 class TenDayForecast
 
   private def get_weather
-    @weather = JSON.parse(File.open('ten_day.json').read)
+    @weather = JSON.parse(File.open('ten_day.json').read)["forecast"]["simpleforecast"]["forecastday"]
   end
 
 end
@@ -29,7 +29,7 @@ end
 class Hurricane
 
   private def get_weather
-    @weather = JSON.parse(File.open('hurricane.json').read)
+    @weather = JSON.parse(File.open('hurricane.json').read)["current_hurricane"]
   end
 
 end
@@ -37,7 +37,7 @@ end
 class SunriseSunset
 
   private def get_weather
-    @weather = JSON.parse(File.open('sunrise.json').read)
+    @weather = JSON.parse(File.open('sunrise.json').read)["sun_phase"]
   end
 
 end
@@ -47,6 +47,7 @@ class Alert
   private def get_weather
     @weather = JSON.parse(File.open('alert.json').read)
   end
+
 end
 
 
@@ -78,31 +79,32 @@ class Test < Minitest::Test
   def test_class_condition_f_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert mount_airy.fahrenheit
+    assert_equal 75.2, mount_airy.fahrenheit
   end
 
   def test_condition_c_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert mount_airy.celsius
+    assert_equal 24.0, mount_airy.celsius
   end
 
   def test_condition_humidity
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert mount_airy.humidity
+
+    assert_equal "33%", mount_airy.humidity
   end
 
   def test_condition_weather
     mount_airy = Location.new(27030)
     mount_airy_conditions = Conditions.new(mount_airy)
-    assert mount_airy_conditions.sky
+    assert_equal "Clear", mount_airy_conditions.sky
   end
 
-  def test_ten_day_1
+  def test_ten_day_forecast
     mount_airy = Location.new(27030)
     mount_airy_forecast = TenDayForecast.new(mount_airy)
-    assert mount_airy_forecast.forecast
+    assert mount_airy_forecast.ten_day
   end
 
   def test_sunrise_passed_location_value
