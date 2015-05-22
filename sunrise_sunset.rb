@@ -13,7 +13,7 @@ class SunriseSunset
   end
 
   def sunset
-    "sunset = #{weather["sunset"]["hour"]}:#{weather["sunset"]["minute"]}"
+    "Sunset = #{weather["sunset"]["hour"]}:#{weather["sunset"]["minute"]}"
   end
 
 

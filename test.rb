@@ -5,6 +5,7 @@ require './location.rb'
 require './conditions.rb'
 require './ten_day.rb'
 require './sunrise_sunset.rb'
+require './alert.rb'
 require 'byebug'
 
 
@@ -76,10 +77,25 @@ class Test < Minitest::Test
   #   assert charleston_sun.sunrise
   # end
 
-  def test_sunset_time
-    nashville = Location.new(37212)
-    nashville_sun = SunriseSunset.new(nashville)
-    assert nashville_sun.sunset
+  # def test_sunset_time
+  #   nashville = Location.new(37212)
+  #   nashville_sun = SunriseSunset.new(nashville)
+  #   assert nashville_sun.sunset
+  # end
+
+  # def test_alert_class
+  #   hillsborough = Location.new(27278)
+  #   hillsborough_alert = Alert.new(hillsborough)
+  #
+  #   assert hillsborough_alert
+  # end
+
+  def test_alert_message
+    oklahoma_city = Location.new(73101)
+    oklahoma_city_alert = Alert.new(oklahoma_city)
+
+    assert oklahoma_city_alert.alert_message
   end
+
 
 end
