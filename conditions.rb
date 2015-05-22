@@ -5,23 +5,23 @@ class Conditions
 
   def initialize(location)
     @zip = location.zip
-    @weather = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{zip}.json")
+    @weather = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{zip}.json")["current_observation"]
   end
 
   def fahrenheit
-    weather["current_observation"]["temp_f"]
+    weather["temp_f"]
   end
 
   def celsius
-    weather["current_observation"]["temp_c"]
+    weather["temp_c"]
   end
 
   def humidity
-    weather["current_observation"]["relative_humidity"]
+    weather["relative_humidity"]
   end
 
   def sky
-    weather["current_observation"]["weather"]
+    weather["weather"]
   end
 
 end
