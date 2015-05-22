@@ -6,6 +6,7 @@ require './conditions.rb'
 require './ten_day.rb'
 require './sunrise_sunset.rb'
 require './alert.rb'
+require './hurricane'
 require 'byebug'
 
 
@@ -90,11 +91,18 @@ class Test < Minitest::Test
   #   assert hillsborough_alert
   # end
 
-  def test_alert_message
-    oklahoma_city = Location.new(73101)
-    oklahoma_city_alert = Alert.new(oklahoma_city)
+  # def test_alert_message
+  #   oklahoma_city = Location.new(73101)
+  #   oklahoma_city_alert = Alert.new(oklahoma_city)
+  #
+  #   assert oklahoma_city_alert.alert_message
+  # end
 
-    assert oklahoma_city_alert.alert_message
+  def test_hurricane_takes_location
+    mount_airy = Location.new(27030)
+    hurricane = Hurricane.new(mount_airy)
+
+    assert_equal 27030, hurricane.zip
   end
 
 
