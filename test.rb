@@ -29,7 +29,7 @@ end
 class Hurricane
 
   private def get_weather
-    @weather = JSON.parse(File.open('hurricane.json').read)["current_hurricane"]
+    @weather = JSON.parse(File.open('hurricane.json').read)["currenthurricane"]
   end
 
 end
@@ -143,8 +143,8 @@ class Test < Minitest::Test
   def test_alert_message
     oklahoma_city = Location.new(73101)
     oklahoma_city_alert = Alert.new(oklahoma_city)
-
-    assert oklahoma_city_alert.alert_message
+    assert_equal ["Description: Flash Flood Watch \nMessage: \n...Flash Flood Watch remains in effect through Monday morning...\n\nThe Flash Flood Watch continues for\n\n* all of central...southern...and southwestern Oklahoma...and all\n of western North Texas. \n\n* Through Monday morning\n\n* up to an inch of rainfall possible through midnight tonight\n\n* Saturday and Sunday 2 to 5 inches of rainfall expected with\n locally higher amounts\n\nPrecautionary/preparedness actions...\n\nMonitor weather forecasts and information. Avoid travel in\nflooded areas...and make plans to get to higher ground if\nflooding develops or worsens in your area.\n\n\n\nMbs\n\n\n\n"],
+    oklahoma_city_alert.alert_message
   end
 
   def test_hurricane_takes_location
@@ -153,13 +153,11 @@ class Test < Minitest::Test
 
     assert_equal 27030, hurricane.zip
   end
-  #
-  # def test_hurricane_method
-  #   mount_airy = Location.new(27030)
-  #   hurricane = Hurricane.new(mount_airy)
-  #
-  #   assert equal, hurricane.list
-  # end
 
+  def test_hurricane_name_list
+    mount_airy = Location.new(27030)
+    hurricane = Hurricane.new(mount_airy)
+    assert_equal "90E", hurricane.list[0]
+  end
 
 end
