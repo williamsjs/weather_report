@@ -10,7 +10,6 @@ class Alert
   end
 
   def alert_message
-    alert_message = ''
     if weather["alerts"].empty?
       @alerts = "There are no weather alerts for your area"
     else

@@ -5,7 +5,7 @@ class SunriseSunset
 
   def initialize(location)
     @zip = location.zip
-    @weather = HTTParty.get("http://api.wunderground.com/api/#{ENV['WUNDERGROUND_KEY']}/astronomy/q/#{zip}.json")["sun_phase"]
+    @weather = get_weather
   end
 
   def sunrise
@@ -13,7 +13,11 @@ class SunriseSunset
   end
 
   def sunset
-    "Sunset = #{weather["sunset"]["hour"]}:#{weather["sunset"]["minute"]}"
+    "Sunset - #{weather["sunset"]["hour"]}:#{weather["sunset"]["minute"]}"
+  end
+
+  private def get_weather
+    HTTParty.get("http://api.wunderground.com/api/#{ENV['WUNDERGROUND_KEY']}/astronomy/q/#{zip}.json")["sun_phase"]
   end
 
 

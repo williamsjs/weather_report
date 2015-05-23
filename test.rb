@@ -59,7 +59,7 @@ class Test < Minitest::Test
     assert_equal "CA", weather["current_observation"]["display_location"]["state"]
   end
 
-  def test_assert_location_with_zip
+  def test_location_with_zip
     weather = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/37212.json")
 
     assert_equal "TN", weather["current_observation"]["display_location"]["state"]
@@ -69,8 +69,14 @@ class Test < Minitest::Test
     assert Location
   end
 
+  def test_zip_passed_integer
+    assert_raises(TypeError) do
+      location_2 = Location.new("37212")
+    end
+  end
+
   def test_store_user_input_in_user
-    user_input = "37212".to_i
+    user_input = 37212
 
     location = Location.new(user_input)
     assert_equal 37212, location.zip
@@ -104,26 +110,27 @@ class Test < Minitest::Test
   def test_ten_day_forecast
     mount_airy = Location.new(27030)
     mount_airy_forecast = TenDayForecast.new(mount_airy)
-    assert mount_airy_forecast.ten_day
+    assert_equal "Your ten day forecast is: \n\n5/22/2015\n      \thigh of 75F, 24C\n      \tLow of 48F, 9C\n5/23/2015\n      \thigh of 79F, 26C\n      \tLow of 54F, 12C\n5/24/2015\n      \thigh of 83F, 28C\n      \tLow of 57F, 14C\n5/25/2015\n      \thigh of 87F, 31C\n      \tLow of 62F, 17C\n5/26/2015\n      \thigh of 87F, 31C\n      \tLow of 63F, 17C\n5/27/2015\n      \thigh of 87F, 31C\n      \tLow of 63F, 17C\n5/28/2015\n      \thigh of 89F, 32C\n      \tLow of 64F, 18C\n5/29/2015\n      \thigh of 91F, 33C\n      \tLow of 64F, 18C\n5/30/2015\n      \thigh of 90F, 32C\n      \tLow of 65F, 18C\n5/31/2015\n      \thigh of 89F, 32C\n      \tLow of 65F, 18C\n",
+    mount_airy_forecast.ten_day
   end
 
   def test_sunrise_passed_location_value
     mount_airy = Location.new(27030)
     day_1 = SunriseSunset.new(mount_airy)
-
     assert day_1
   end
 
   def test_sunrise_time
     mount_airy = Location.new(27030)
     mount_airy_sun = SunriseSunset.new(mount_airy)
-    assert mount_airy_sun.sunrise
+    assert_equal "Sunrise - 6:10",
+    mount_airy_sun.sunrise
   end
 
   def test_sunset_time
     mount_airy = Location.new(37212)
     mount_airy_sun = SunriseSunset.new(mount_airy)
-    assert mount_airy_sun.sunset
+    assert_equal "Sunset - 20:27", mount_airy_sun.sunset
   end
 
   def test_alert_class
