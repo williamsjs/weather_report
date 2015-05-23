@@ -9,19 +9,19 @@ class Conditions
   end
 
   def fahrenheit
-    weather["temp_f"]
+    "fahrenheit: #{weather["temp_f"]}"
   end
 
   def celsius
-    weather["temp_c"]
+    "celsius: weather["temp_c"]"
   end
 
   def humidity
-    weather["relative_humidity"]
+    "humidity: weather["relative_humidity"]"
   end
 
   def sky
-    weather["weather"]
+    "sky: weather["weather"]"
   end
 
   private def get_weather

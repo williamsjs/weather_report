@@ -85,26 +85,26 @@ class Test < Minitest::Test
   def test_class_condition_f_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert_equal 75.2, mount_airy.fahrenheit
+    assert_equal "fahrenheit: 75.2", mount_airy.fahrenheit
   end
 
   def test_condition_c_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert_equal 24.0, mount_airy.celsius
+    assert_equal "celsius: 24.0", mount_airy.celsius
   end
 
   def test_condition_humidity
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
 
-    assert_equal "33%", mount_airy.humidity
+    assert_equal "humidity: 33%", mount_airy.humidity
   end
 
   def test_condition_weather
     mount_airy = Location.new(27030)
     mount_airy_conditions = Conditions.new(mount_airy)
-    assert_equal "Clear", mount_airy_conditions.sky
+    assert_equal "sky: Clear", mount_airy_conditions.sky
   end
 
   def test_ten_day_forecast
