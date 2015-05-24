@@ -9,11 +9,21 @@ puts "Enter a zipcode for your weather report: "
 
 input = gets.chomp
 
-input = zip.to_i
+input = input.to_i
 
-location = Location.new(zip)
+location = Location.new(input)
 alert = Alert.new(location)
 conditions = Conditions.new(location)
 hurricane = Hurricane.new(location)
-sunrise_sunset = SunsetSunrise.new(location)
+sunrise_sunset = SunriseSunset.new(location)
 ten_day = TenDayForecast.new(location)
+
+puts conditions.fahrenheit
+puts conditions.celsius
+puts conditions.humidity
+puts conditions.sky
+puts hurricane.list
+puts sunrise_sunset.sunrise
+puts sunrise_sunset.sunset
+puts ten_day.ten_day
+puts alert.alert_message

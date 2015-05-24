@@ -1,7 +1,7 @@
 require 'httparty'
 
 class Alert
-  attr_reader :zip, :weather
+  attr_reader :zip, :weather, :alerts
 
   def initialize(location)
     @zip = location.zip
@@ -11,10 +11,10 @@ class Alert
 
   def alert_message
     if weather["alerts"].empty?
-      @alerts = "There are no weather alerts for your area"
+      alerts = "There are no weather alerts for your area"
     else
-      @alerts = weather["alerts"].map do |item|
-        "Description: #{item["description"]} \nMessage: #{item["message"]}"
+      alerts = weather["alerts"].map do |item|
+        "WARNING!\nDescription: #{item["description"]} \nMessage: #{item["message"]}"
       end
     end
   end

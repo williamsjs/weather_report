@@ -11,7 +11,7 @@ class Hurricane
 
   def list
     list = weather.map do |h|
-      h["stormInfo"]["stormName"]
+      "Hurricane/Storm Name: #{h["stormInfo"]["stormName"]}"
     end
   end
 
