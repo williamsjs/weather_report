@@ -85,7 +85,7 @@ class Test < Minitest::Test
   def test_class_condition_f_temp
     location = Location.new(27030)
     mount_airy = Conditions.new(location)
-    assert_equal "fahrenheit: 75.2", mount_airy.fahrenheit
+    assert_equal "Temperature: \nfahrenheit: 75.2", mount_airy.fahrenheit
   end
 
   def test_condition_c_temp
@@ -143,7 +143,7 @@ class Test < Minitest::Test
   def test_alert_message
     oklahoma_city = Location.new(73101)
     oklahoma_city_alert = Alert.new(oklahoma_city)
-    assert_equal ["Description: Flash Flood Watch \nMessage: \n...Flash Flood Watch remains in effect through Monday morning...\n\nThe Flash Flood Watch continues for\n\n* all of central...southern...and southwestern Oklahoma...and all\n of western North Texas. \n\n* Through Monday morning\n\n* up to an inch of rainfall possible through midnight tonight\n\n* Saturday and Sunday 2 to 5 inches of rainfall expected with\n locally higher amounts\n\nPrecautionary/preparedness actions...\n\nMonitor weather forecasts and information. Avoid travel in\nflooded areas...and make plans to get to higher ground if\nflooding develops or worsens in your area.\n\n\n\nMbs\n\n\n\n"],
+    assert_equal ["WARNING!\nDescription: Flash Flood Watch \nMessage: \n...Flash Flood Watch remains in effect through Monday morning...\n\nThe Flash Flood Watch continues for\n\n* all of central...southern...and southwestern Oklahoma...and all\n of western North Texas. \n\n* Through Monday morning\n\n* up to an inch of rainfall possible through midnight tonight\n\n* Saturday and Sunday 2 to 5 inches of rainfall expected with\n locally higher amounts\n\nPrecautionary/preparedness actions...\n\nMonitor weather forecasts and information. Avoid travel in\nflooded areas...and make plans to get to higher ground if\nflooding develops or worsens in your area.\n\n\n\nMbs\n\n\n\n"],
     oklahoma_city_alert.alert_message
   end
 
@@ -157,7 +157,7 @@ class Test < Minitest::Test
   def test_hurricane_name_list
     mount_airy = Location.new(27030)
     hurricane = Hurricane.new(mount_airy)
-    assert_equal "90E", hurricane.list[0]
+    assert_equal "Hurricane/Storm Name: 90E", hurricane.list[0]
   end
 
 end

@@ -9,7 +9,7 @@ class Conditions
   end
 
   def fahrenheit
-    "Temperature \nfahrenheit: #{weather["temp_f"]}"
+    "Temperature: \nfahrenheit: #{weather["temp_f"]}"
   end
 
   def celsius
