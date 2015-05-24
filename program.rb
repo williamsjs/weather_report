@@ -5,16 +5,14 @@ require './location.rb'
 require './sunrise_sunset.rb'
 require './ten_day.rb'
 
-puts "Enter a zipcode for your weather report: "
+puts "Enter a zipcode or city, state for your weather report: "
 
 input = gets.chomp
-
-input = input.to_i
 
 location = Location.new(input)
 alert = Alert.new(location)
 conditions = Conditions.new(location)
-hurricane = Hurricane.new(location)
+hurricane = Hurricane.new
 sunrise_sunset = SunriseSunset.new(location)
 ten_day = TenDayForecast.new(location)
 

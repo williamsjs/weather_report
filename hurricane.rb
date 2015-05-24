@@ -3,8 +3,7 @@ require 'httparty'
 class Hurricane
   attr_reader :zip, :weather, :hurricanes, :list
 
-  def initialize(location)
-    @zip = location.zip
+  def initialize()
     @weather = get_weather
     @list = []
   end
